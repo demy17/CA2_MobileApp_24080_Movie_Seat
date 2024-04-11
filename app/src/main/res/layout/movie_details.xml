@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/movie_poster"
+        android:layout_width="match_parent"
+        android:layout_height="328dp"
+        android:contentDescription="@string/movie_poster"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotocondensed"
+            android:text="@string/movieTitle"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingStart="8dp" />
+
+        <TextView
+            android:id="@+id/certification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotocondensed"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:text="@string/certification"
+            android:textColor="#FF9800"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/movie_starring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotocondensed"
+        android:text="@string/movie_starring"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/running_time_mins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/running_time_mins"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/movie_seats_remaining"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/movie_seats_remaining"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/SelectSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Seats"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:paddingEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/minus_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#003C3F41"
+            android:contentDescription="@string/minus_button"
+            android:src="@drawable/minus_icon"
+            tools:ignore="RedundantDescriptionCheck" />
+
+        <TextView
+            android:id="@+id/seats_selected_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SelectedSIts"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/plus_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/plus_button"
+            android:src="@drawable/add_icon"
+            tools:ignore="RedundantDescriptionCheck" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/chair"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:srcCompat="@drawable/cinema_seat" />
+
+        <TextView
+            android:id="@+id/seats_remaining_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RemainingSeats"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <TextView
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Seats Remaining"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
